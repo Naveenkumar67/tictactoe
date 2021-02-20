@@ -19,6 +19,7 @@ const GameBoard = () => {
            let res=check();
            if(res!==false){
            alert(`Player ${res} wins`)
+           reset();
            }
            setMoves(moves+1);
            if(moves==8){

@@ -14,9 +14,7 @@ const Square = ({index,executor,gameState}) => {
         }
         return ans;
     }
-    const ch=(index,curPl)=>{
-        document.getElementById(index).innerHTML=curPl;
-    }
+    
     return (
         <div className={`fs text-center gameSq ${line(index)} `} onClick={e=>executor(index)}>
             {gameState[index].value}
